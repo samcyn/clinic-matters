@@ -1,0 +1,72 @@
+ html, body{
+	background: #eee;
+	padding: 0;
+	margin: 0;
+	height: 100;
+}
+/*===================
+	NAVBAR START STYLING 
+=====================*/
+.navbar{
+	height: 52px;
+
+}
+/*===================
+	NAVBAR ENDS STYLING 
+=====================*/
+
+/*===================
+			main STYLING 
+=====================*/
+
+main{
+	height: calc(100% - 52px);
+	position: relative;
+}
+
+/*===================
+	main  ends STYLING 
+=====================*/
+/*===================
+	leftSidebar STYLING 
+=====================*/
+
+.leftsidebar{
+	position: absolute;
+	width: 250px;
+	height: 100%;
+	z-index: 3;
+	background: #fff;
+}
+
+/*======================
+	leftSidebar ends STYLING 
+=====================*/
+#main{
+	width: calc(100% - 250px);
+	height: 100%;
+	margin-left: auto;
+	padding: 30px;
+}
+
+#main .headings{
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+#main .tile{
+	background: #fff;
+	height: 150px;
+	padding: 20px;
+	display: block;
+}
+#main .icons{
+	height: 70px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: blue;
+	color: #fff;
+}
