@@ -1,0 +1,56 @@
+/*reset*/
+html, body, .wrapper{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background: #EEE;
+}
+
+.navbar{
+	height: 52px;
+}
+
+main{
+	height: calc(100% - 52px);
+	position: relative;
+}
+
+#leftSideBar{
+	position: absolute;
+	width: 250px;
+	height: 100%;
+	z-index: 3;
+	background: #FFF;
+}
+
+#main{
+	width: calc(100% - 250px);
+	height: 100%;
+	margin-left: auto;
+	padding: 30px;
+}
+
+#main .headings{
+	font-size: 35px;
+	font-weight: 500;
+}
+
+#main .tile{
+	background:  #f2e851;
+	height: 150px;
+	padding: 20px;
+	display: block;
+}
+
+
+
+#main .icons{
+	height: 70px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: powderblue;
+	color: #FFF;
+}
