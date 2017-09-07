@@ -34,8 +34,9 @@ main{
 }
 
 #main .headings{
-	font-size: 35px;
+	font-size: 22px;
 	font-weight: 500;
+	margin-bottom: 20px;
 }
 
 #main .tile{
@@ -53,5 +54,4 @@ main{
 	align-items: center;
 	background: blue;
 	color: #fff;
-	text-align: right;
 }
