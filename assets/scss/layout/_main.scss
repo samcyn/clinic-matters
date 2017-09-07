@@ -1,0 +1,48 @@
+// import aside side of main...
+@import '_aside.scss';
+
+
+main{
+	position: relative;
+	max-height: calc(100% - #{$navbarHeight});
+	height: 100%;
+}
+
+
+// main other side, aside from aside tag
+section.contents{
+	width: calc(100% - #{$leftSideBarWidth});
+	margin-left: auto;
+	z-index: 2;
+    padding: $inner-spacing;
+    min-height: 100%;
+	.inner-sections{
+		margin-bottom: $inner-spacing;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+	.stats{
+		letter-spacing: 2px;
+		color: #FFFFFF;
+		text-align: center;
+		hr{
+			background: #FFFFFF;
+			margin: 20px auto;
+		}
+		.figures{
+			font-size: 40px;
+			// letter-spacing: 1px;
+			font-weight: 900;
+		}
+		.stat{
+			font-size: 20px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+	@media (max-width: 991px){
+		width: 100%;
+		padding: $inner-spacing/2;
+	}
+}

@@ -1,0 +1,30 @@
+.card{
+    border-radius: 0;
+    box-shadow: none;
+    .card-header{
+        padding: 15px 15px 0;
+        background-color: #FFFFFF;
+        border-bottom: none;
+    }
+    .card-block{
+        padding: 15px;
+    }
+    .card-body{
+        padding: 0 15px 15px;
+    }
+    &.card-green{
+        background: $brand-green;
+    }
+    &.card-red{
+        background: $brand-red;
+    }
+    &.card-purple{
+        background: $secondary-color;
+    }
+     &.card-orange{
+        background: $primary-color;
+    }
+    @media(max-width: 767px){
+        margin-bottom: 15px;
+    }
+}
