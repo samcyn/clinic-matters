@@ -4,7 +4,7 @@ html, body, .wrapper{
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background: #EEE;
+	background: #D0E5E8;
 }
 
 .navbar{
@@ -23,6 +23,107 @@ main{
 	z-index: 3;
 	background: #FFF;
 }
+/*new*/
+#leftSideBar ul{
+	height: 100%;
+}
+
+#L-upper{
+	height: 130px;
+	padding: 0 0 0 20px;
+}
+
+.ad-style{
+	margin-top: 0;
+	margin-right: 0;
+	padding: 20px 20px 10px 20px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #FDFDFF;
+	/*border: 1px solid red;*/
+}
+
+#ad-bold{
+	font-weight: bold;
+}
+#li-admin{
+	margin-bottom: 25px;
+}
+
+#L-Lower{
+	height: calc(100% - 130px);
+	padding: 0 20px;
+}
+
+#li-dashstyle{
+	background: #24C5D9;
+}
+
+#i-dashstyle{
+	float: left;
+	padding: 10px;
+	text-align: center;
+	line-height: 30px;
+	width: 70px;
+	color: #FFF;
+}
+#p-dashstyle{
+	padding: 10px;
+	line-height: 30px;
+	color: #FFF;
+}
+
+
+.a-style{
+	display: block;
+  width: 100%;
+}
+
+
+.i-style{
+	float: left;
+	padding: 10px;
+	text-align: center;
+	line-height: 30px;
+	width: 70px;
+	color: #A9AFBB;
+}
+
+.p-style{
+	padding: 10px;
+	line-height: 30px;
+	color: #6F7681;
+}
+
+.bg-grey{
+	background: #EEEEEE;
+}
+
+.bg-white{
+	background: #FFFFFF;
+}
+
+.bg-offwhite{
+	background: #FAFAFC;
+}
+.bg-red{
+	background: #EA4743;
+}
+.bg-blue{
+	background: #1ABBD0;
+}
+
+.bg-green{
+	background: #59B05D;
+}
+.bg-orange{
+	background:#FEA11E; 
+}
+
+.tx-white{
+	color: #FFFFFF;
+}
+
+/*new*/
 
 #main{
 	width: calc(100% - 250px);
@@ -34,10 +135,11 @@ main{
 #main .headings{
 	font-size: 35px;
 	font-weight: 500;
+	margin-bottom: 20px;
 }
 
 #main .tile{
-	background:  #f2e851;
+	/*background:  #f2e851;*/
 	height: 150px;
 	padding: 20px;
 	display: block;
@@ -51,6 +153,6 @@ main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: powderblue;
+	/*background: powderblue;*/
 	color: #FFF;
 }

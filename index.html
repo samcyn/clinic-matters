@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Layout</title>		
+		<title>Hospital Admin</title>		
 		
 		<!-- bulma css -->
 		<link rel="stylesheet" type="text/css" href="assets/plugins/bulma/css/bulma.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar ">
+		<nav class="navbar bg-blue">
 		  <div class="navbar-brand">
 		    <a class="navbar-item" href="http://bulma.io">
 		      <img src="#" alt="LOGO" width="112" height="28">
@@ -44,19 +44,19 @@
 		    <div class="navbar-end">
 		      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
 		        <span class="icon" style="color: #333;">
-		          <i class="fa fa-search"></i>
+		          <i class="fa fa-search tx-white"></i>
 		        </span>
 		      </a>
 
 		      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
 		        <span class="icon" style="color: #333;">
-		          <i class="fa fa-envelope"></i>
+		          <i class="fa fa-envelope tx-white"></i>
 		        </span>
 		      </a>
 
 		      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
 		        <span class="icon" style="color: #333;">
-		          <i class="fa fa-bell"></i>
+		          <i class="fa fa-bell tx-white"></i>
 		        </span>
 		      </a>
 
@@ -73,107 +73,107 @@
 
 	<main>
 		<aside id="leftSideBar">
-			<ul>
-				<li>
-					<div class="admin">
-						<div class="columns">
-						  <div class="column is-3">
-						    <div class="thumbnail">
-						    	<img src="https://placehold.it/150x150">
-						    </div>
-						  </div>
-						  <div class="column">
-						    <div>
-						    	<h5>Welcome,</h5>
-						    	<h5>Mr Admin</h5>
-						    </div>
-						  </div>		  
-						</div>
-					</div>				
-				</li>
+			<div id="L-upper">
+				<ul>
+					<li id="li-admin">
+						<div class="admin">
+							<div class="columns ad-style">
+							  <div class="column is-3">
+							    <div class="thumbnail">
+							    	<img src="assets/img/icon/Doctor.jpg">
+							    </div>
+							  </div>
+							  <div class="column">
+							    <div>
+							    	<h5>Welcome,</h5>
+							    	<h5 id="ad-bold">Mr Admin</h5>
+							    </div>
+							  </div>		  
+							</div>
+						</div>				
+					</li>
+				</ul>
+			</div>
+			
+			<div id="L-Lower">
+				<ul>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Dashboard</p>
-					</a>
-				</li>
+					<li id="li-dashstyle">
+						<a href="#" class="a-style">
+							<i class="fa fa-braille" id="i-dashstyle"></i>
+							<p id="p-dashstyle">Dashboard</p>
+						</a>
+					</li>				
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Dashboard</p>
-					</a>
-				</li>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-user-md i-style"></i>
+							<p class="p-style">Doctors</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Doctors</p>
-					</a>
-				</li>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-wheelchair i-style"></i>
+							<p class="p-style">Patients</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Patients</p>
-					</a>
-				</li>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-calendar i-style"></i>
+							<p class="p-style">Appointment</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Appointment</p>
-					</a>
-				</li>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-bar-chart i-style"></i>
+							<p class="p-style">Reports</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Reports</p>
-					</a>
-				</li>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-money i-style"></i>
+							<p class="p-style">Billings</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Billings</p>
-					</a>
-				</li>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-envelope i-style"></i>
+							<p class="p-style">Mailbox</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Mailbox</p>
-					</a>
-				</li>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-users i-style"></i>
+							<p class="p-style">Hospital Staff</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Hospital Staff</p>
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Event Management</p>
-					</a>
-				</li>
-			</ul>
+					<li>
+						<a href="#" class="a-style">
+							<i class="fa fa-list-alt i-style"></i>
+							<p class="p-style">Event Management</p>
+						</a>
+					</li>
+				</ul>
+			</div>			
 		</aside>
 
-		<section class="main" id="main">
+		<section class="main bg-grey" id="main">
 			<h3 class="headings">Dashboard</h3>
 			<div class="panels">
 				<div class="columns">
 					<div class="column">
-						<div class="tile is-success">
+						<div class="tile  is-success bg-white">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
-										<i class="fa fa-user"></i>
+									<div class="icons bg-red">
+										<i class="fa fa-user-md"></i>
 									</div>
 								</div>
 
@@ -188,18 +188,18 @@
 					</div>
 
 					<div class="column">
-						<div class="tile is-success">
+						<div class="tile is-success bg-white">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
-										<i class="fa fa-user"></i>
+									<div class="icons bg-blue">
+										<i class="fa fa-file-image-o"></i>
 									</div>
 								</div>
 
 								<div class="column">
 									<div class="stats">
 										<h3>10</h3>
-										<h5>Doctor</h5>
+										<h5>Operation<br>Report</h5>
 									</div>
 								</div>							
 							</div>
@@ -207,18 +207,18 @@
 					</div>
 
 					<div class="column">
-						<div class="tile is-success">
+						<div class="tile is-success bg-white">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
-										<i class="fa fa-user"></i>
+									<div class="icons bg-green">
+										<i class="fa fa-smile-o"></i>
 									</div>
 								</div>
 
 								<div class="column">
 									<div class="stats">
 										<h3>10</h3>
-										<h5>Doctor</h5>
+										<h5>Birth<br>Report</h5>
 									</div>
 								</div>							
 							</div>
@@ -226,10 +226,10 @@
 					</div>
 
 					<div class="column">
-						<div class="tile is-success">
+						<div class="tile is-success bg-white">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
+									<div class="icons bg-orange">
 										<i class="fa fa-user"></i>
 									</div>
 								</div>
@@ -249,13 +249,13 @@
 			<div class="charts">
 				<div class="columns">
 					<div class="column">
-						<div class="tile">
+						<div class="tile bg-offwhite">
 							<p>First Chart</p>
 						</div>
 					</div>
 
 					<div class="column">
-						<div class="tile">
+						<div class="tile bg-offwhite">
 							<p>Second Chart</p>
 						</div>
 					</div>
@@ -265,13 +265,13 @@
 			<div class="charts">
 				<div class="columns">
 					<div class="column">
-						<div class="tile">
+						<div class="tile bg-offwhite">
 							<p>First Chart</p>
 						</div>
 					</div>
 
 					<div class="column">
-						<div class="tile">
+						<div class="tile bg-offwhite">
 							<p>Second Chart</p>
 						</div>
 					</div>
@@ -281,13 +281,13 @@
 			<div class="charts">
 				<div class="columns">
 					<div class="column">
-						<div class="tile">
+						<div class="tile bg-offwhite">
 							<p>First Chart</p>
 						</div>
 					</div>
 
 					<div class="column">
-						<div class="tile">
+						<div class="tile bg-offwhite">
 							<p>Second Chart</p>
 						</div>
 					</div>
