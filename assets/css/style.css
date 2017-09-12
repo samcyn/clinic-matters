@@ -1,3 +1,7 @@
+/**{
+	border: 1px solid rgba(0,0,0,0.3);
+}*/
+
 html, body{
 	margin: 0;
 	padding: 0;
@@ -11,6 +15,7 @@ header styling
 
 .navbar{
 	height: 52px;
+	background-color: #20C0D4;
 }
 
 /*==============
@@ -31,13 +36,18 @@ main{
 
 #main .headings{
 	font-size: 35px;
-	font-weight: 500;
+	font-weight: 400;
 }
 #main .tile{
 	background: #FFF;
 	height: 150px;
 	padding: 20px;
 	display: block;
+	margin: 7px 0 7px 0;
+}
+
+#main .is-success{
+	border-radius: 3%;
 }
 
 #main .icons{
@@ -48,6 +58,44 @@ main{
 	align-items: center;
 	background: blue;
 	color: #FFF;
+	border-radius: 5%;
+}
+
+#main .fa{
+	font-size: 40px;
+}
+
+#main .icon-red{
+	background-color: #EB4946;
+}
+
+#main .icon-blue{
+	background-color: #19BACF;
+}
+
+#main .icon-green{
+	background-color: #4AA44E;
+}
+
+#main .icon-yellow{
+	background-color: #FC9811;
+}
+
+.stats h3{
+	
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 0;
+	line-height: 35px;
+	text-align: right;
+}
+
+.stats h5{
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: 1px;
+	text-align: right;
+	color: #AAA;
 }
 
 /*==============
@@ -57,6 +105,70 @@ leftsidebar styling
 	position: absolute;
 	width: 250px;
 	height: 100%;
+	
 	z-index: 3;
 	background: #FFF;
+}
+
+#leftSideBar ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 100%;
+}
+
+#leftSideBar ul li{
+	font-size: 16px;
+}
+
+#leftSideBar [class*='fa-']{
+	float: left;
+	padding: 10px;
+	width: 70px;
+	text-align: center;
+	line-height: 30px;
+}
+
+#leftSideBar ul li a{
+	color: #888;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+}
+
+#leftSideBar ul li a:hover{
+	color: #FFF;
+	background-color: #24C5D9;
+	border-radius: 3%;
+}
+
+#leftSideBar li p{
+	padding: 10px;
+	line-height: 30px;
+}
+
+.thumbnail{
+	width: 65px;
+	height:65px;
+	margin: 5px;
+}
+
+.thumbnail img{
+	border-radius: 50%;
+}
+
+.greeting{
+	margin-bottom: 10px;
+	p
+}
+
+.welcome{
+	color: #888;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.mr{
+	font-weight: 600;
+	font-size: 20px;
 }
