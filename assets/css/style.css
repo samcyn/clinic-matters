@@ -6,9 +6,12 @@ html, body, .wrapper{
 	width: 100%;
 	background: #D0E5E8;
 }
-
+  
 .navbar{
 	height: 52px;
+}
+.navbar-end i{
+	color: #FFFFFF;
 }
 
 main{
@@ -33,7 +36,11 @@ main{
 	padding: 0 0 0 20px;
 }
 
-.ad-style{
+#L-upper li{
+	margin-bottom: 25px;
+}
+
+#ad-style{
 	margin-top: 0;
 	margin-right: 0;
 	padding: 20px 20px 10px 20px;
@@ -42,57 +49,48 @@ main{
 	/*border: 1px solid red;*/
 }
 
-#ad-bold{
+#L-upper h5:nth-child(2){
 	font-weight: bold;
 }
-#li-admin{
-	margin-bottom: 25px;
-}
+
 
 #L-Lower{
 	height: calc(100% - 130px);
 	padding: 0 20px;
 }
 
-#li-dashstyle{
-	background: #24C5D9;
+#L-Lower li:nth-child(1){
+	background: #24C5D9;	
 }
 
-#i-dashstyle{
-	float: left;
-	padding: 10px;
-	text-align: center;
-	line-height: 30px;
-	width: 70px;
-	color: #FFF;
-}
-#p-dashstyle{
-	padding: 10px;
-	line-height: 30px;
-	color: #FFF;
-}
-
-
-.a-style{
+#L-Lower li a{
 	display: block;
   width: 100%;
 }
 
+#L-Lower li:nth-child(1) i{
+	color: #FFF;	
+}
 
-.i-style{
+#L-Lower li i{
+	color: #A9AFBB;
 	float: left;
 	padding: 10px;
 	text-align: center;
 	line-height: 30px;
-	width: 70px;
-	color: #A9AFBB;
+	width: 70px;	
 }
 
-.p-style{
+#L-Lower li:nth-child(1) p{
+color: #FFF;
+}
+
+#L-Lower li p{
 	padding: 10px;
 	line-height: 30px;
 	color: #6F7681;
 }
+
 
 .bg-grey{
 	background: #EEEEEE;
@@ -119,9 +117,10 @@ main{
 	background:#FEA11E; 
 }
 
-.tx-white{
+/*.tx-white{
 	color: #FFFFFF;
-}
+}*/
+
 
 /*new*/
 
