@@ -16,6 +16,9 @@ header styling
 .navbar{
 	height: 52px;
 	background-color: #20C0D4;
+	-webkit-box-shadow: 3px 9px 15px -2px rgba(187,234,243,1);
+-moz-box-shadow: 3px 9px 15px -2px rgba(187,234,243,1);
+box-shadow: 3px 9px 15px -2px rgba(187,234,243,1);
 }
 
 /*==============
@@ -44,6 +47,9 @@ main{
 	padding: 20px;
 	display: block;
 	margin: 7px 0 7px 0;
+	-webkit-box-shadow: 0px 0px 14px 4px rgba(216,216,216,1);
+-moz-box-shadow: 0px 0px 14px 4px rgba(216,216,216,1);
+box-shadow: 0px 0px 14px 4px rgba(216,216,216,1);
 }
 
 #main .is-success{
@@ -51,34 +57,47 @@ main{
 }
 
 #main .icons{
-	height: 70px;
-	width: 70px;
+	height: 100px;
+	width: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: blue;
 	color: #FFF;
+	margin: 5px 10px 0 0;
 	border-radius: 5%;
 }
 
 #main .fa{
-	font-size: 40px;
+	font-size: 60px;
 }
 
 #main .icon-red{
 	background-color: #EB4946;
+	-webkit-box-shadow: 1px 14px 14px -8px rgba(248,180,179,1);
+-moz-box-shadow: 1px 14px 14px -8px rgba(248,180,179,1);
+box-shadow: 1px 14px 14px -8px rgba(248,180,179,1);
 }
 
 #main .icon-blue{
 	background-color: #19BACF;
+	-webkit-box-shadow: 1px 14px 14px -8px rgba(180,234,241,1);
+-moz-box-shadow: 1px 14px 14px -8px rgba(180,234,241,1);
+box-shadow: 1px 14px 14px -8px rgba(180,234,241,1);
 }
 
 #main .icon-green{
 	background-color: #4AA44E;
+	-webkit-box-shadow: 1px 14px 14px -8px rgba(186,223,188,1);
+-moz-box-shadow: 1px 14px 14px -8px rgba(186,223,188,1);
+box-shadow: 1px 14px 14px -8px rgba(186,223,188,1);
 }
 
 #main .icon-yellow{
 	background-color: #FC9811;
+	-webkit-box-shadow: 1px 14px 14px -8px rgba(255,225,181,1);
+-moz-box-shadow: 1px 14px 14px -8px rgba(255,225,181,1);
+box-shadow: 1px 14px 14px -8px rgba(255,225,181,1);
 }
 
 .stats h3{
@@ -105,9 +124,11 @@ leftsidebar styling
 	position: absolute;
 	width: 250px;
 	height: 100%;
-	
 	z-index: 3;
 	background: #FFF;
+	-webkit-box-shadow: 5px 0px 14px 1px rgba(216,216,216,1);
+-moz-box-shadow: 5px 0px 14px 1px rgba(216,216,216,1);
+box-shadow: 5px 0px 14px 1px rgba(216,216,216,1);
 }
 
 #leftSideBar ul{
@@ -132,14 +153,18 @@ leftsidebar styling
 #leftSideBar ul li a{
 	color: #888;
 	display: block;
-	width: 100%;
+	width: 90%;
 	text-decoration: none;
+	margin-left: 10px;
 }
 
 #leftSideBar ul li a:hover{
 	color: #FFF;
 	background-color: #24C5D9;
 	border-radius: 3%;
+	-webkit-box-shadow: 3px 9px 15px -2px rgba(187,234,243,1);
+-moz-box-shadow: 3px 9px 15px -2px rgba(187,234,243,1);
+box-shadow: 3px 9px 15px -2px rgba(187,234,243,1);
 }
 
 #leftSideBar li p{
@@ -155,11 +180,12 @@ leftsidebar styling
 
 .thumbnail img{
 	border-radius: 50%;
+	margin-left: 10px;
 }
 
 .greeting{
 	margin-bottom: 10px;
-	p
+	margin-left: 5px;
 }
 
 .welcome{
