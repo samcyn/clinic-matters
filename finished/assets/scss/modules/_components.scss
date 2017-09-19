@@ -1,0 +1,47 @@
+//columns
+.columns{
+	margin-top: 0;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+//cards
+.card--panel{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.card--icon-wrap{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EEEEEE;
+    border-radius: 3px;
+}
+
+.card--icon{
+    font-size: 30px;
+}
+.card--stats{
+    flex: 1;
+    height: 90px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.card--stats-figure{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.card--stats-text{
+    color: #D2D2D2;
+    font-weight: 500;
+}

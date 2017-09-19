@@ -8,12 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- bulma css -->
-        <link rel="stylesheet" type="text/css" href="assets/plugins/bulma/css/bulma.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
         <!-- font awesome -->
-        <link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
 
         <!-- main/style css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     </head>
     <body>
         <header>
@@ -72,7 +72,7 @@
         <main>
 
           <aside id="leftSideBar">
-            <ul>
+            <ul class="h-100p">
               <li>
                 <div class="admin">
                   <div class="columns">
@@ -92,82 +92,82 @@
               </li>
 
               <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Dashboard</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Doctors</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Patients</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Appointment</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Reports</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Billing</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Mail Box</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Hosptal Staff</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <p>Event Management</p>
-                </a>
+                <ul class="menus">
+                  <li>
+                      <a href="#">
+                        <i class="fa fa-dashboard"></i>
+                        <p>Dashboard</p>
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Doctors</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Patients</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Appointment</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Reports</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Billing</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Mail Box</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Hosptal Staff</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-dashboard"></i>
+                      <p>Event Management</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </aside>
 
           <section class="main" id="main">
-            
-            <h3 class="headings">Dashboard</h3>
-
+            <div class="page-title">
+              <h3 class="headings">Dashboard</h3>
+            </div>
             <div class="panels">
-              <div class="columns">
+              <div class="columns is-multiline is-mobile">
                 <div class="column">
                   <!-- tiles in side here -->
                   <div class="card is-success">
-                    <div class="columns">
-                      <div class="column is-5">
-                        <div class="icons">
-                          <i class="fa fa-user"></i>
-                        </div>
+                    <div class="card--panel">
+                      <div class="card--icon-wrap">
+                        <i class="fa fa-user card--icon"></i>
                       </div>
-                      <div class="column">
-                        <div class="stats">
-                          <h3>10</h3>
-                          <h5>Doctor</h5>
-                        </div>
+                      <div class="card--stats">
+                        <h3 class="card--stats-figure">10</h3>
+                        <h5 class="card--stats-text">Doctor</h5>
                       </div>
                     </div>
                   </div>
@@ -175,17 +175,13 @@
                 <div class="column">
                   <!-- tiles in side here -->
                   <div class="card is-success">
-                    <div class="columns">
-                      <div class="column is-5">
-                        <div class="icons">
-                          <i class="fa fa-user"></i>
-                        </div>
+                    <div class="card--panel">
+                      <div class="card--icon-wrap">
+                        <i class="fa fa-user card--icon"></i>
                       </div>
-                      <div class="column">
-                        <div class="stats">
-                          <h3>10</h3>
-                          <h5>Doctor</h5>
-                        </div>
+                      <div class="card--stats">
+                        <h3 class="card--stats-figure">10</h3>
+                        <h5 class="card--stats-text">Operation<br> Report</h5>
                       </div>
                     </div>
                   </div>
@@ -193,17 +189,13 @@
                 <div class="column">
                   <!-- tiles in side here -->
                   <div class="card is-success">
-                    <div class="columns">
-                      <div class="column is-5">
-                        <div class="icons">
-                          <i class="fa fa-user"></i>
-                        </div>
+                    <div class="card--panel">
+                      <div class="card--icon-wrap">
+                        <i class="fa fa-user card--icon"></i>
                       </div>
-                      <div class="column">
-                        <div class="stats">
-                          <h3>10</h3>
-                          <h5>Doctor</h5>
-                        </div>
+                      <div class="card--stats">
+                        <h3 class="card--stats-figure">10</h3>
+                        <h5 class="card--stats-text">Birth<br> Report</h5>
                       </div>
                     </div>
                   </div>
@@ -211,17 +203,13 @@
                 <div class="column">
                   <!-- tiles in side here -->
                   <div class="card is-success">
-                    <div class="columns">
-                      <div class="column is-5">
-                        <div class="icons">
-                          <i class="fa fa-user"></i>
-                        </div>
+                    <div class="card--panel">
+                      <div class="card--icon-wrap">
+                        <i class="fa fa-user card--icon"></i>
                       </div>
-                      <div class="column">
-                        <div class="stats">
-                          <h3>10</h3>
-                          <h5>Doctor</h5>
-                        </div>
+                      <div class="card--stats">
+                        <h3 class="card--stats-figure">10</h3>
+                        <h5 class="card--stats-text">Death<br> Report</h5>
                       </div>
                     </div>
                   </div>
@@ -230,14 +218,14 @@
             </div>
 
             <div class="charts">
-              <div class="columns">
+              <div class="columns is-multiline is-mobile">
                 <div class="column">
-                  <div class="tile">
+                  <div class="card">
                     <p>first chart</p>
                   </div>
                 </div>
                 <div class="column">
-                  <div class="tile">
+                  <div class="card">
                     <p>second chart</p>
                   </div>
                 </div>
@@ -247,12 +235,12 @@
             <div class="charts">
               <div class="columns">
                 <div class="column">
-                  <div class="tile">
+                  <div class="card">
                     <p>first chart</p>
                   </div>
                 </div>
                 <div class="column">
-                  <div class="tile">
+                  <div class="card">
                     <p>second chart</p>
                   </div>
                 </div>
@@ -262,12 +250,12 @@
             <div class="charts">
               <div class="columns">
                 <div class="column">
-                  <div class="tile">
+                  <div class="card">
                     <p>first chart</p>
                   </div>
                 </div>
                 <div class="column">
-                  <div class="tile">
+                  <div class="card">
                     <p>second chart</p>
                   </div>
                 </div>
@@ -280,7 +268,7 @@
         
         
         <!-- Jquery  -->
-        <script src="assets/plugins/jquery-2.2.3.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
 
     </body>
 </html>

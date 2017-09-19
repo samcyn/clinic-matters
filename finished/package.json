@@ -1,0 +1,33 @@
+{
+  "name": "clinic-matters",
+  "version": "1.0.0",
+  "description": "A simple clinic dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samcyn/clinic-matters.git"
+  },
+  "keywords": [
+    "clinic",
+    "health",
+    "patient",
+    "nurses",
+    "doctors",
+    "fever",
+    "cancer"
+  ],
+  "author": "Samson Iyanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samcyn/clinic-matters/issues"
+  },
+  "homepage": "https://github.com/samcyn/clinic-matters#readme",
+  "dependencies": {
+    "bulma": "^0.5.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
+  }
+}
