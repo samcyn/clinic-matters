@@ -15,7 +15,7 @@ html, body, .wrapper{
 }
 
 main{
-	height: calc(100% - 52px);
+	min-height: calc(100% - 52px);
 	position: relative;
 }
 
