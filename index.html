@@ -14,8 +14,9 @@
 		<nav class="navbar ">
 		  	<div class="navbar-brand">
 			    <a class="navbar-item" href="http://bulma.io">
-			      	<img src="#" alt="Logo" width="112" height="28">
+			      	<img src="#" alt="Logo" width="112" height="28">Sheba Hospital
 			    </a>
+
 
 			    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
 			      <span class="icon" style="color: #333;">
@@ -72,12 +73,12 @@
 						<div class="columns">
 							<div class="column is-3">
 								<div class="thumbnail">
-									<img src="https://placehold.it/150x150">
+									<img  class="img-circle" src="assets/img/banners/doctor.jpg">
 								</div>
 							</div>
 							<div class="column">
 								<div>
-									<h5>Welcome</h5>
+									<h5 id="colo">Welcome</h5>
 									<h5>Mr. Admin</h5>
 								</div>
 							</div>
@@ -85,60 +86,64 @@
 						</div>
 					</div>
 				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Dashboard</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Doctors</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>patients</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Appointment</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Report</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Billing</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Mailbox</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Hospital staff</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard"></i>
-						<p>Event Management</p>
-					</a>
-				</li>
+				<div class="left-pad">
+					<div class="line">
+						<li>
+							<a href="#" class="active">
+								<i class="fa fa-ambulance"></i>
+								<p>Dashboard</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-user"></i>
+								<p>Doctors</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-group"></i>
+								<p>patients</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-calendar-o"></i>
+								<p>Appointment</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-bar-chart"></i>
+								<p>Report</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-dollar"></i>
+								<p>Billing</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-envelope-o"></i>
+								<p>Mailbox</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-dashboard"></i>
+								<p>Hospital staff</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-table"></i>
+								<p>Event Management</p>
+							</a>
+						</li>
+					</div>	
+				</div>
 			</ul>
 		</aside>
 		<section class="main" id="main">
@@ -151,7 +156,7 @@
 						<div class="tile is-success">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
+									<div class="icons bg-red">
 										<i class="fa fa-user"></i>
 									</div>
 								</div>
@@ -159,6 +164,7 @@
 									<div class="stats">
 										<h3>10</h3>
 										<h5>Doctor</h5>
+										<br>
 									</div>
 								</div>
 							</div>
@@ -169,14 +175,14 @@
 						<div class="tile is-success">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
-										<i class="fa fa-user"></i>
+									<div class="icons bg-blue">
+										<i class="fa fa-calendar-o"></i>
 									</div>
 								</div>
 								<div class="column">
 									<div class="stats">
-										<h3>10</h3>
-										<h5>Doctor</h5>
+										<h3>6</h3>
+										<h5>Operation Report</h5>
 									</div>
 								</div>
 							</div>
@@ -187,14 +193,14 @@
 						<div class="tile is-success">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
-										<i class="fa fa-user"></i>
+									<div class="icons bg-green">
+										<i class="fa fa-smile-o"></i>
 									</div>
 								</div>
 								<div class="column">
 									<div class="stats">
-										<h3>10</h3>
-										<h5>Doctor</h5>
+										<h3>8</h3>
+										<h5>Birth Report</h5>
 									</div>
 								</div>
 							</div>
@@ -205,14 +211,14 @@
 						<div class="tile is-success">
 							<div class="columns">
 								<div class="column is-5">
-									<div class="icons">
-										<i class="fa fa-user"></i>
+									<div class="icons bg-yellow">
+										<i class="fa fa-hotel"></i>
 									</div>
 								</div>
 								<div class="column">
 									<div class="stats">
-										<h3>10</h3>
-										<h5>Doctor</h5>
+										<h3>14</h3>
+										<h5>Death Report</h5>
 									</div>
 								</div>
 							</div>

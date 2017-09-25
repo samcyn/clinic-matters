@@ -7,6 +7,7 @@ html, body{
 
 .navbar{
 	height: 52px;
+	background: #21e0f5;
 
 }
 
@@ -23,6 +24,64 @@ main{
 	background: #FFF;
 }
 
+#leftSidebar ul{
+
+}
+
+.columns{
+	padding: 20px;
+}
+
+#leftSidebar .admin .columns h5{
+	text-align: center;
+}
+
+.admin .columns #colo{
+	color: #ccc4c4;
+}
+
+.left-pad{
+	padding: 20px;
+}
+
+.line{
+	border-top: 1px solid #d6d2d2;
+	padding-top: 20px;
+}
+
+#leftSidebar [class*="fa fa-"]{
+	float: left;
+	padding: 15px;
+}
+
+#leftSidebar li a{
+	display: block;
+	width: 100%;
+	color: #222;
+}
+
+#leftSidebar li{
+	border-radius: 5px;
+}
+
+#leftSidebar li a.active{
+	color: white;
+	background: #21e0f5;
+	border: 1px solid #21e0f5;
+	border-radius: 3px;
+	box-shadow: 2px 11px 12px -2px rgba(211,238,240,1);
+}
+
+#leftSidebar li p{
+	padding: 15px;
+	line-height: 20px;
+}
+
+.stats{
+	padding: 10px;
+	text-align: right;
+}
+
 #main{
 	width: calc(100% - 250px);
 	height: 100%;
@@ -31,8 +90,9 @@ main{
 }
 
 #main .headings{
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 500;
+	margin-bottom: 20px;
 }
 
 #main .tile{
@@ -42,6 +102,17 @@ main{
 	display: block !important;
 }
 
+.main .column .stats h3{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.main .column .stats h5{
+	font-size: 20px;
+	color: #ccc4c4;
+}
+
+
 #main .icons{
 	height: 70px;
 	width: 70px;
@@ -50,4 +121,29 @@ main{
 	align-items: center;
 	background: blue;
 	color: #FFF;
+}
+
+
+.bg-red{
+	background: #f14444 !important;
+	box-shadow: 2px 11px 12px -2px rgba(235,158,158,1);
+}
+
+.bg-blue{
+	background: #21e0f5 !important;
+	box-shadow: 2px 11px 12px -2px rgba(211,238,240,1);
+}
+
+.bg-green{
+	background: #65c165 !important;
+	box-shadow: 2px 11px 12px -2px rgba(173,237,173,1);
+}
+
+.bg-yellow{
+	background: #ff8d00 !important;
+	box-shadow: 2px 11px 12px -2px rgba(240,183,113,1);
+}
+
+#main .panels{
+	margin-bottom: 20px;
 }
