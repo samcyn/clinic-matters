@@ -4,6 +4,12 @@
 	//none means no border needed
 }
 
+.admin{
+	.columns{
+		justify-content: space-evenly;
+	}
+}
+
 #leftSideBar{
 	width: $leftSideBarWidth;
 	position: absolute;

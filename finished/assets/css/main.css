@@ -28,31 +28,41 @@ a {
 }
 
 /* line 1, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
+.p-15 {
+  padding: 15px;
+}
+
+/* line 5, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
+.p-t-15 {
+  padding-top: 15px;
+}
+
+/* line 9, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
 .m-auto {
   margin: 0 auto;
 }
 
-/* line 5, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
+/* line 13, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
 .w-25p {
   width: 25%;
 }
 
-/* line 9, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
+/* line 17, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
 .w-50p {
   width: 50%;
 }
 
-/* line 13, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
+/* line 21, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
 .w-100p {
   width: 100%;
 }
 
-/* line 16, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
+/* line 24, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
 .h-100p {
   height: 100%;
 }
 
-/* line 19, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
+/* line 27, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/base/_base.scss */
 .dis-flex {
   display: flex;
   justify-content: center;
@@ -155,7 +165,12 @@ header .collapse.navbar-collapse {
   background: #FDAD2A;
 }
 
-/* line 7, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+/* line 8, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+.admin .columns {
+  justify-content: space-evenly;
+}
+
+/* line 13, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
 #leftSideBar {
   width: 220px;
   position: absolute;
@@ -170,21 +185,21 @@ header .collapse.navbar-collapse {
 }
 
 @media (max-width: 991px) {
-  /* line 7, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+  /* line 13, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
   #leftSideBar {
     display: none;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 22, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+  /* line 28, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
   .rightSideBar {
     height: 100% !important;
   }
 }
 
 @media (min-width: 991px) {
-  /* line 22, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+  /* line 28, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
   .rightSideBar {
     display: none;
   }
@@ -338,7 +353,12 @@ header .collapse.navbar-collapse {
   background: #FDAD2A;
 }
 
-/* line 7, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+/* line 8, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+.admin .columns {
+  justify-content: space-evenly;
+}
+
+/* line 13, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
 #leftSideBar {
   width: 220px;
   position: absolute;
@@ -353,21 +373,21 @@ header .collapse.navbar-collapse {
 }
 
 @media (max-width: 991px) {
-  /* line 7, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+  /* line 13, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
   #leftSideBar {
     display: none;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 22, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+  /* line 28, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
   .rightSideBar {
     height: 100% !important;
   }
 }
 
 @media (min-width: 991px) {
-  /* line 22, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
+  /* line 28, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/layout/_aside.scss */
   .rightSideBar {
     display: none;
   }
@@ -560,6 +580,17 @@ main {
 .card--stats-text {
   color: #D2D2D2;
   font-weight: 500;
+}
+
+/* line 49, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/modules/_components.scss */
+.card__body {
+  padding: 20px;
+}
+
+/* line 52, C:/Users/USER/Documents/Repos/clinicDashboard/finished/assets/scss/modules/_components.scss */
+canvas {
+  height: 400px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=../css/main.map */
