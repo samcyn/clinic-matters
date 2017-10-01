@@ -2,7 +2,6 @@
 html, body, .wrapper{
 	margin: 0;
 	padding: 0;
-	height: 100%;
 	width: 100%;
 	background: #D0E5E8;
 }
@@ -15,7 +14,6 @@ html, body, .wrapper{
 }
 
 main{
-	min-height: calc(100% - 52px);
 	position: relative;
 }
 
@@ -27,40 +25,46 @@ main{
 	background: #FFF;
 }
 /*new*/
-#leftSideBar ul{
-	height: 100%;
-}
 
 #L-upper{
-	height: 130px;
-	padding: 0 0 0 20px;
+	height: 140px;
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #EAE8E9;		
 }
 
-#L-upper li{
-	margin-bottom: 25px;
+#L-upper .columns{
+	margin: 0;
 }
 
-#ad-style{
-	margin-top: 0;
-	margin-right: 0;
-	padding: 20px 20px 10px 20px;
-  margin-bottom: 30px;
-  border-bottom: 5px solid #FDFDFF;
-	/*border: 1px solid red;*/
+#L-upper .columns .is-3{
+	width: 100px;
 }
 
-#L-upper h5:nth-child(2){
+#L-upper #thumbnail{
+	height:80px ;
+	width: 80px ;
+	border-radius: 50%;
+	background: red;
+	
+}
+
+#L-upper .column:nth-child(2){
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#L-upper .column h5:nth-child(2){
 	font-weight: bold;
 }
 
-
 #L-Lower{
-	height: calc(100% - 130px);
 	padding: 0 20px;
+	margin-top: 35px;	
 }
 
 #L-Lower li:nth-child(1){
-	background: #24C5D9;	
+	background: #24C5D9;
+	box-shadow: 0px 7px 3px -2px rgba(198,238,245,1);	
 }
 
 #L-Lower li a{
@@ -91,6 +95,45 @@ color: #FFF;
 	color: #6F7681;
 }
 
+#rightSideBar{
+	width: calc(100% - 250px);
+	height: 100%;
+	margin-left: auto;
+	padding: 30px;
+}
+
+#rightSideBar .headings{
+	font-size: 35px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+#rightSideBar .tile{
+	/*background:  #f2e851;*/
+	height: 150px;
+	padding: 20px;
+	display: block;
+}
+
+#rightSideBar .icons{
+	height: 70px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background: powderblue;*/
+	color: #FFF;
+}
+
+#rightSideBar .stats{
+	text-align: right;
+}
+
+.stats h3{
+  height: 40px;
+  font-size: 35px;
+  font-weight: 500;
+}
 
 .bg-grey{
 	background: #EEEEEE;
@@ -117,41 +160,23 @@ color: #FFF;
 	background:#FEA11E; 
 }
 
+.tile__body #barChart, .tile__body #doughnut-chart, .tile__body #bar-chart-horizontal {
+ height: 400px;
+ width: 400px;
+}
+
 /*.tx-white{
 	color: #FFFFFF;
 }*/
 
-
-/*new*/
-
-#main{
-	width: calc(100% - 250px);
-	height: 100%;
-	margin-left: auto;
-	padding: 30px;
+/*changes under consideration*/
+/*#rightSideBar .icons{
+    height: 90px;
+    width: 90px;
 }
 
-#main .headings{
-	font-size: 35px;
-	font-weight: 500;
-	margin-bottom: 20px;
-}
+.fa{
+	font-size: 40px;
+}*/
 
-#main .tile{
-	/*background:  #f2e851;*/
-	height: 150px;
-	padding: 20px;
-	display: block;
-}
-
-
-
-#main .icons{
-	height: 70px;
-	width: 70px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/*background: powderblue;*/
-	color: #FFF;
-}
+/*height: 110px; for column surrounding column is-5*/

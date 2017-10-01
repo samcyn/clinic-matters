@@ -1,0 +1,45 @@
+@media(max-width: 991px){
+	#leftSideBar{
+		display:none;
+	}
+
+	#rightSideBar{
+		width: 100%;
+	}
+
+	#rightSideBarNew{
+		position: fixed;
+		height: 100%;
+		background: red;
+		top: 0;
+		right: 0;
+		width: 250px;
+		transform: translate3d(100%, 0,0);
+		transition: all 0.5s;
+
+		display: block;
+		z-index: 1032;
+		visibility: visible;
+		overflow: visible;
+		border-top: none;;
+		text-align: left;
+		padding: 0;
+	}
+
+	.nav-open #rightSideBarNew{
+		transform: translate3d(0, 0, 0);
+	}
+
+	.nav-open .wrapper{
+		left: 0;
+		transform: translate3d(-250px, 0, 0);
+	}
+
+}
+
+@media(min-width: 991px){
+	#rightSideBarNew{
+		display: none;
+	}
+}
+

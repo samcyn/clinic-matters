@@ -8,78 +8,85 @@
 		<link rel="stylesheet" type="text/css" href="assets/plugins/bulma/css/bulma.css">
 		<!-- font-awesome -->
 		<link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+		
+		<!-- main/style css  -->
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 		<!-- main/style css  -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		
 </head>
+
 <body>
-	<header>
-		<nav class="navbar bg-blue">
-		  <div class="navbar-brand">
-		    <a class="navbar-item" href="http://bulma.io">
-		      <img src="#" alt="LOGO" width="112" height="28">
-		    </a>
+	<div class="wrapper">
+		<header>
+			<nav class="navbar bg-blue">
+			  <div class="navbar-brand">
+			    <a class="navbar-item" href="http://bulma.io">
+			      <img src="#" alt="LOGO" width="112" height="28">
+			    </a>
 
-		    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
-		      <span class="icon" style="color: #333;">
-		        <i class="fa fa-github"></i>
-		      </span>
-		    </a>
+			    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+			      <span class="icon" style="color: #333;">
+			        <i class="fa fa-github"></i>
+			      </span>
+			    </a>
 
-		    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
-		      <span class="icon" style="color: #55acee;">
-		        <i class="fa fa-twitter"></i>
-		      </span>
-		    </a>
+			    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+			      <span class="icon" style="color: #55acee;">
+			        <i class="fa fa-twitter"></i>
+			      </span>
+			    </a>
 
-		    <div class="navbar-burger burger" data-target="navMenubd-example">
-		      <span></span>
-		      <span></span>
-		      <span></span>
-		    </div>
-		  </div> 
+			    <div class="navbar-burger burger" data-target="navMenubd-example">
+			      <span></span>
+			      <span></span>
+			      <span></span>
+			    </div>
+			  </div> 
 
-		  <div id="navMenubd-example" class="navbar-menu">
-		    
+			  <div id="navMenubd-example" class="navbar-menu">
+			    
 
-		    <div class="navbar-end">
-		      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
-		        <span class="icon" style="color: #333;">
-		          <i class="fa fa-search"></i>
-		        </span>
-		      </a>
+			    <div class="navbar-end">
+			      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+			        <span class="icon" style="color: #333;">
+			          <i class="fa fa-search"></i>
+			        </span>
+			      </a>
 
-		      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
-		        <span class="icon" style="color: #333;">
-		          <i class="fa fa-envelope"></i>
-		        </span>
-		      </a>
+			      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+			        <span class="icon" style="color: #333;">
+			          <i class="fa fa-envelope"></i>
+			        </span>
+			      </a>
 
-		      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
-		        <span class="icon" style="color: #333;">
-		          <i class="fa fa-bell"></i>
-		        </span>
-		      </a>
+			      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+			        <span class="icon" style="color: #333;">
+			          <i class="fa fa-bell"></i>
+			        </span>
+			      </a>
 
-		      <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
-		        <span class="icon" style="color: #55acee;">
-		          <i class="fa fa-sign-out"></i>
-		        </span>
-		      </a>
-		      
-		    </div>
-		  </div>
-		</nav>
-	</header>
+			      <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
+			        <span class="icon" style="color: #55acee;">
+			          <i class="fa fa-sign-out"></i>
+			        </span>
+			      </a>
+			      
+			    </div>
+			  </div>
+			</nav>
+		</header>
 
-	<main>
+		<main>
 		<aside id="leftSideBar">
 			<div id="L-upper">
 				<ul>
 					<li>
 						<div>
-							<div class="columns" id="ad-style">
+							<div class="columns">
 							  <div class="column is-3">
-							    <div class="thumbnail">
+							    <div id="thumbnail">
 							    	<img src="assets/img/icon/Doctor.jpg">
 							    </div>
 							  </div>
@@ -90,11 +97,11 @@
 							    </div>
 							  </div>		  
 							</div>
-						</div>				
+						</div>
 					</li>
 				</ul>
 			</div>
-			
+
 			<div id="L-Lower">
 				<ul>
 
@@ -161,15 +168,15 @@
 						</a>
 					</li>
 				</ul>
-			</div>			
+			</div>
 		</aside>
 
-		<section class="main bg-grey" id="main">
+		<section class="bg-grey" id="rightSideBar">
 			<h3 class="headings">Dashboard</h3>
 			<div class="panels">
 				<div class="columns">
 					<div class="column">
-						<div class="tile  is-success bg-white">
+						<div class="tile is-success bg-white">
 							<div class="columns">
 								<div class="column is-5">
 									<div class="icons bg-red">
@@ -250,29 +257,17 @@
 				<div class="columns">
 					<div class="column">
 						<div class="tile bg-offwhite">
-							<p>First Chart</p>
+							<div class="tile__body">
+								<canvas id="barChart"></canvas>
+							</div>
 						</div>
 					</div>
 
 					<div class="column">
 						<div class="tile bg-offwhite">
-							<p>Second Chart</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="charts">
-				<div class="columns">
-					<div class="column">
-						<div class="tile bg-offwhite">
-							<p>First Chart</p>
-						</div>
-					</div>
-
-					<div class="column">
-						<div class="tile bg-offwhite">
-							<p>Second Chart</p>
+							<div class="tile__body">
+								<canvas id="doughnut-chart"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -282,20 +277,59 @@
 				<div class="columns">
 					<div class="column">
 						<div class="tile bg-offwhite">
-							<p>First Chart</p>
+							<div class="tile__body">
+								<canvas id="bar-chart-horizontal"></canvas>
+							</div>
 						</div>
 					</div>
 
 					<div class="column">
 						<div class="tile bg-offwhite">
-							<p>Second Chart</p>
+							<div class="tile__body">
+								<canvas id="line-chart"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="charts">
+				<div class="columns">
+					<div class="column">
+						<div class="tile bg-offwhite">
+							<div class="tile__body">
+								<canvas id="doughnut-chart2"></canvas>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="tile bg-offwhite">
+							<div class="tile__body">
+								<canvas id="barChart2"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-	</main>
+
+		
+		</main>
+	</div>
+	
 <!-- Jquery -->
 <script src="assets/plugins/jquery-2.2.3.min.js"></script>
+<script src="assets/plugins/Chartjs/chart.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+	app.sideBarController();
+	app.barChartController();
+	app.doughnutChartController();
+	app.lineChartController();
+	app.hbarChartController();
+	app.barChartController2();
+	app.doughnutChartController2();
+</script>
 </body>
 </html>
