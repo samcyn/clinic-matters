@@ -1,0 +1,39 @@
+@media(max-width: 991px) {
+    #leftSideBar{
+        display: none;
+    }
+    #main{
+        width: 100%;
+        
+    }
+    #rightSidebar{
+        position: fixed;
+        height: 100%;
+        top: 0;
+        background: #FFF;
+        right: 0;
+        width: 250px;
+        display: block;
+        text-align: left;
+        visibility: visible;
+        padding: 0;
+        transform: translate3d(250px, 0, 0);
+        transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    .nav-open #rightSidebar{
+        transform: translate3d(0px, 0, 0);
+    }
+    .wrapper{
+        transition: all 1s ease;
+    }
+    .nav-open .wrapper{
+        left: 0;
+        transform: translate3d(-250px, 0, 0);
+    }
+}
+
+@media(min-width: 991px) {
+    #rightSidebar{
+        display: none;
+    }
+}

@@ -11,9 +11,11 @@
 
 	<!-- Style sheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel ="stylesheet" type="text/css" href="assets/css/responsive.css">
 
 </head>
 <body>
+    <div class="wrapper">
 		<header>
 			<nav class="navbar ">
   				<div class="navbar-brand">
@@ -236,10 +238,11 @@
 					<div class="columns">
 						<div class="column">
 							<div class="tile stat-1">
-								<ul>
-									<li>Quality of Service</li>
-									<li>Service Recommendations</li>
-								</ul>
+                                
+								<div class="tile__body">
+                                    <canvas id="myChart"></canvas>                                    
+                                </div>
+                                
 							</div>
 						</div>
 						<div class="column">
@@ -288,9 +291,20 @@
 				</section>
 			</section>
 		</main>
-
+    </div>
 
 <!-- JQuery -->
 <script src="assets/plugins/jquery-2.2.3.min.js"></script>
+    
+<!--    Chart JS-->
+<script src="assets/plugins/chartjs/chart.min.js"></script>
+    
+<!--    JavaScript-->
+<script src="assets/js/main.js"></script>
+    
+<script>
+        app.sideBarController();
+        app.barChartController();
+</script>
 </body>
 </html>

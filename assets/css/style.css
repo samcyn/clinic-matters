@@ -117,6 +117,9 @@ box-shadow: 1px 14px 14px -8px rgba(255,225,181,1);
 	color: #AAA;
 }
 
+.stat-1 ul {
+	list-style-type: 
+}
 /*==============
 leftsidebar styling
 ==============*/
@@ -126,6 +129,7 @@ leftsidebar styling
 	height: 100%;
 	z-index: 3;
 	background: #FFF;
+
 	-webkit-box-shadow: 5px 0px 14px 1px rgba(216,216,216,1);
 -moz-box-shadow: 5px 0px 14px 1px rgba(216,216,216,1);
 box-shadow: 5px 0px 14px 1px rgba(216,216,216,1);
@@ -197,4 +201,14 @@ box-shadow: 3px 9px 15px -2px rgba(187,234,243,1);
 .mr{
 	font-weight: 600;
 	font-size: 20px;
+}
+
+/*Charts*/
+canvas{
+    height: 150px;
+    width: 100%;
+}
+
+#tile__body{
+    padding: 10px;
 }
