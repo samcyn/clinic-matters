@@ -2,7 +2,7 @@ html, body{
 	background: #EEE;
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	/*height: 100%;*/
 }
 
 .navbar{
@@ -29,7 +29,7 @@ main{
 }
 
 .columns{
-	padding: 20px;
+	padding: 10px;
 }
 
 #leftSidebar .admin .columns h5{
@@ -49,22 +49,22 @@ main{
 	padding-top: 20px;
 }
 
-#leftSidebar [class*="fa fa-"]{
+aside [class*="fa fa-"]{
 	float: left;
 	padding: 15px;
 }
 
-#leftSidebar li a{
+aside li a{
 	display: block;
 	width: 100%;
 	color: #222;
 }
 
-#leftSidebar li{
+aside li{
 	border-radius: 5px;
 }
 
-#leftSidebar li a.active{
+aside li a.active{
 	color: white;
 	background: #21e0f5;
 	border: 1px solid #21e0f5;
@@ -72,7 +72,7 @@ main{
 	box-shadow: 2px 11px 12px -2px rgba(211,238,240,1);
 }
 
-#leftSidebar li p{
+aside li p{
 	padding: 15px;
 	line-height: 20px;
 }
@@ -100,6 +100,15 @@ main{
 	height: 150px;
 	padding: 20PX;
 	display: block !important;
+}
+
+.tile__body{
+	padding: 20px;
+}
+
+canvas{
+	height: 400px !important;
+	width: 400px !important;
 }
 
 .main .column .stats h3{
@@ -144,6 +153,6 @@ main{
 	box-shadow: 2px 11px 12px -2px rgba(240,183,113,1);
 }
 
-#main .panels{
-	margin-bottom: 20px;
-}
+/*#main .panels{
+	margin-bottom: 10px;
+}*/

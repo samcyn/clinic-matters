@@ -2,14 +2,18 @@
 <html>
 <head>
 	<title>Clinic Matters</title>
+	<meta charset="utf-8">
 	<!-- Bulma css -->
 	<link rel="stylesheet" type="text/css" href="assets/plugins/bulma/css/bulma.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" type="text/css" href="assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- main/style css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- responsive.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 <body>
+	<div class="wrapper">
 	<header>
 		<nav class="navbar ">
 		  	<div class="navbar-brand">
@@ -163,8 +167,8 @@
 								<div class="column">
 									<div class="stats">
 										<h3>10</h3>
-										<h5>Doctor</h5>
-										<br>
+										<h5>Doctor Report</h5>
+										
 									</div>
 								</div>
 							</div>
@@ -231,12 +235,19 @@
 				<div class="columns">
 					<div class="column">
 						<div class="tile">
-							<p>First Chart</p>
+
+							<div class="tile__body">
+								<canvas id="myChart"></canvas>
+							</div>
+
 						</div>
 					</div>
 					<div class="column">
 						<div class="tile">
-							<p>Second Chart</p>
+							<div class="tile__body">
+								<canvas id="myscaChart" ></canvas>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -246,12 +257,16 @@
 				<div class="columns">
 					<div class="column">
 						<div class="tile">
-							<p>First Chart</p>
+							<div id="tile__body">
+								<canvas id="mypieChart"></canvas>
+							</div>
 						</div>
 					</div>
 					<div class="column">
 						<div class="tile">
-							<p>Second Chart</p>
+							<div id="tile__body">
+								<canvas id="mydoughnutChart"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -273,10 +288,20 @@
 			</div>
 		</section>
 	</main>
+	</div>
 	
 
 	<!-- jquery -->
 	<script src="assets/plugins/jquery-2.2.3.min.js"></script>
+	<script src="assets/plugins/chartjs/chart.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+		app.sideBarController();
+		app.barchartController();
+		app.scatterchartController();
+		app.piechartController();
+		app.doughnaughtchartController();
+	</script>
 
 </body>
 </html>
