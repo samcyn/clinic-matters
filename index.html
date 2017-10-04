@@ -12,6 +12,7 @@
 	<!-- Style sheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel ="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link href="assets/plugins/intro/introjs.css" rel="stylesheet">
 
 </head>
 <body>
@@ -35,7 +36,8 @@
       					</span>
     				</a>
 
-   			 		<div class="navbar-burger burger" data-target="navMenubd-example">
+   			 		
+                    <div class="navbar-burger burger" data-target="navMenubd-example">
       					<span></span>
       					<span></span>
       					<span></span>
@@ -156,14 +158,14 @@
 							<div class="tile is-success">
 
 								<div class="columns">
-									<div class="column is-5">
+									<div class="column">
 										<div class="icons icon-red">
 											<i class="fa fa-user"></i>
 										</div>
 									</div>
 									<div class="column">
 										<div class="stats">
-											<h3>10</h3>
+											<h3><span class="widget-thumb-body-stat" data-counter="counterup" data-value="39">0</span></h3>
 											<h5>Doctor</h5>
 										</div>
 									</div>
@@ -181,9 +183,9 @@
 											<i class="fa fa-calendar-minus-o "></i>
 										</div>
 									</div>
-									<div class="column">
+									<div class="column stats__">
 										<div class="stats">
-											<h3>6</h3>
+											<h3><span class="widget-thumb-body-stat" data-counter="counterup" data-value="16">0</span></h3>
 											<h5>Operation Report</h5>
 										</div>
 									</div>
@@ -203,7 +205,7 @@
 									</div>
 									<div class="column">
 										<div class="stats">
-											<h3>8</h3>
+											<h3><span class="widget-thumb-body-stat" data-counter="counterup" data-value="25">0</span></h3>
 											<h5>Birth Report</h5>
 										</div>
 									</div>
@@ -223,7 +225,7 @@
 									</div>
 									<div class="column">
 										<div class="stats">
-											<h3>4</h3>
+											<h3><span class="widget-thumb-body-stat" data-counter="counterup" data-value="19">0</span></h3>
 											<h5>Death Report</h5>
 										</div>
 									</div>
@@ -233,62 +235,57 @@
 						</div>
 					</div>
 				</div>
+                
+                <section id="charts-">
+                    <section class="statistics">
+                        <div class="columns">
+                            <div class="column">
 
-				<section class="statistics">
-					<div class="columns">
-						<div class="column">
-							<div class="tile stat-1">
-                                
-								<div class="tile__body">
-                                    <canvas id="myChart"></canvas>                                    
+                                    <div class="tile__body">
+                                        <canvas id="myChart"  width="800" height="450"></canvas>                                    
+                                    </div>
+
+                            </div>
+                            <div class="column">
+                                <div class="tile__body">
+                             <canvas id="line-chart"  width="800" height="450"></canvas>
                                 </div>
-                                
-							</div>
-						</div>
-						<div class="column">
-							<div class="tile">
-								<ul>
-									<li>OPD Earnings</li>
-									<li>IPD Earnings</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
+                            </div>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="statistics">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="tile__body">
+                                    <canvas id="bar-chart-horizontal" width="800" height="450"></canvas>
+                                </div>
+                            </div>
 
-				<section class="statistics">
-					<div class="columns">
-						<div class="column">
-							<div class="tile">
-								<h2>New Patients</h2>
-								<h2>68.95%</h2>
-							</div>
-						</div>
-						<div class="column">
-							<div class="tile">
-								<h2>Pharmacy order</h2>
-								<h2>2332</h2>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="statistics">
-					<div class="columns">
-						<div class="column">
-							<div class="tile">
-								<h2>Lab Tests</h2>
-								<h2>332</h2>
-							</div>
-						</div>
-						<div class="column">
-							<div class="tile">
-								<h2>OPD/IPD visitors</h2>
-								<h2>2332</h2>
-							</div>
-						</div>
-					</div>
-				</section>
+                            <div class="column">
+                                <div class="tile__body">
+                                    <canvas id="mixed-chart" width="800" height="450"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br/>
+                    <section class="statistics">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="tile__body">
+                                    <canvas id="doughnut-chart" width="800" height="450"></canvas>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="tile__body">
+                                    <canvas id="radar-chart" width="800" height="600"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                
 			</section>
 		</main>
     </div>
@@ -297,14 +294,19 @@
 <script src="assets/plugins/jquery-2.2.3.min.js"></script>
     
 <!--    Chart JS-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>-->
 <script src="assets/plugins/chartjs/chart.min.js"></script>
+<!--    Intro JS-->
+     <script src="assets/plugins/intro/intro.js"></script>
     
 <!--    JavaScript-->
 <script src="assets/js/main.js"></script>
     
 <script>
-        app.sideBarController();
-        app.barChartController();
+    app.initIntro();
+    app.sideBarController();
+    app.Charts();
+    
 </script>
 </body>
 </html>
